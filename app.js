@@ -57,3 +57,5 @@ function convertToRoman(num) {
     
     convertToRoman(7);
     
+    // Store a variable with a value or regExp that only takes numbers
+    // When loading, add a class of 'loading' from semantic to input bar
