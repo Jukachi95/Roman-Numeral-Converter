@@ -49,13 +49,51 @@ function convertToRoman(num) {
                 }
     
         }
-    
+
+
+      
+
+
+       
+
         return roman;
     
     
     }
+
+
+   
     
-    convertToRoman(7);
+    
+
+
+    function displayVal(){
+
+          // Get element of input
+      
+          let entVal = document.querySelector('#entVal');
+
+          // Get element of blocked input
+  
+          let blockVal = document.querySelector("#blockedInput")
+  
+          // Console the value
+  
+              entVal.addEventListener('input', (e)=>{
+                  // console.log(e.target.value)
+                  let value = e.target.value;
+                  console.log(value)
+                  console.log(convertToRoman(value))
+                  blockVal.value = convertToRoman(value);
+  
+              })
+
+        
+
+    }
+
+        displayVal()
+    // Event listener was here
     
     // Store a variable with a value or regExp that only takes numbers
     // When loading, add a class of 'loading' from semantic to input bar
